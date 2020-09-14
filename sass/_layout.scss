@@ -30,15 +30,17 @@ html {
   // border: 2px solid teal;
   display: flex;
   border-radius: 1.6rem;
-  overflow: hidden;
+  // overflow: hidden;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
 }
 
 .content-img {
+  border-radius: 1.6rem 0 0 1.6rem;
 }
 
 .content {
   // border: 2px solid tomato;
+  border-radius: 0 1.6rem 1.6rem 0;
   padding: 7rem;
   margin-left: -12.2rem;
   background-color: #fff;
@@ -85,7 +87,7 @@ html {
 }
 
 .share__links {
-  border: 2px solid skyblue;
+  // border: 2px solid skyblue;
   background-color: $color-very-dark-grayish-blue;
   padding: auto 5rem;
   display: flex;
@@ -94,6 +96,27 @@ html {
   justify-content: center;
   width: fit-content;
   border-radius: 1rem;
+
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+
+  position: absolute;
+  top: 33rem;
+  right: -6rem;
+
+  &::after {
+    // border: 2px solid skyblue;
+    content: '';
+    height: 30px;
+    width: 30px;
+    background-color: $color-very-dark-grayish-blue;
+    clip-path: polygon(0 0, 100% 0, 50% 70%);
+
+    position: absolute;
+    right: 15rem;
+    top: 7rem;
+  }
 
   & > * {
     margin: 2.5rem 1rem;
@@ -114,7 +137,10 @@ html {
 }
 
 .hide {
-  display: none;
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
 }
 
 // BUTTON
@@ -128,6 +154,14 @@ html {
   border-radius: 50%;
   width: 55%;
   height: 55%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 // FOOTER
