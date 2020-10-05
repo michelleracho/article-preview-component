@@ -1,5 +1,7 @@
 # Frontend Mentor - Article preview component
 
+- View [live preview](https://kind-leavitt-c7d140.netlify.app/)
+
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
