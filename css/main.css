@@ -48,7 +48,7 @@ html {
   border-radius: 1.6rem;
   -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
-  height: 50vh;
+  width: 100%;
 }
 
 @media only screen and (max-width: 23.4375em) {
@@ -62,11 +62,13 @@ html {
 
 .content-img {
   border-radius: 1.6rem 0 0 1.6rem;
+  width: 50%;
+  height: auto;
 }
 
 .content {
   border-radius: 0 1.6rem 1.6rem 0;
-  padding: 5rem 6rem;
+  padding: 6rem 6rem;
   margin-left: -12.2rem;
   background-color: #fff;
   position: relative;
@@ -79,13 +81,14 @@ html {
 }
 
 .content__text {
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   font-size: 2.2rem;
   line-height: 1.5;
 }
 
 .content__details {
   font-size: 2rem;
+  margin-top: 4rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% 1fr 10%;
@@ -124,7 +127,6 @@ html {
 
 .share__links {
   background-color: #48556a;
-  padding: auto 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,8 +149,8 @@ html {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: absolute;
-  top: 23rem;
-  right: -6.2rem;
+  top: 27.5rem;
+  right: -6.1rem;
 }
 
 .share__links::after {

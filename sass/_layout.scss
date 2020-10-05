@@ -36,7 +36,8 @@ html {
   border-radius: 1.6rem;
   // overflow: hidden;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
-  height: 50vh;
+  // height: 50vh;
+  width: 100%;
 
   @media only screen and (max-width: $bp-smallest) {
     flex-direction: column;
@@ -44,15 +45,16 @@ html {
 }
 
 .content-img {
+  // border: 2px solid tomato;
   border-radius: 1.6rem 0 0 1.6rem;
-  // width: 100%;
-  // height: auto;
+  width: 50%;
+  height: auto;
 }
 
 .content {
   // border: 2px solid tomato;
   border-radius: 0 1.6rem 1.6rem 0;
-  padding: 5rem 6rem;
+  padding: 6rem 6rem;
   margin-left: -12.2rem;
   background-color: #fff;
   position: relative;
@@ -64,7 +66,7 @@ html {
   }
 
   &__text {
-    margin: 2rem auto;
+    margin: 2.5rem auto;
     font-size: 2.2rem;
     line-height: 1.5;
   }
@@ -72,6 +74,7 @@ html {
   &__details {
     // border: 2px solid tomato;
     font-size: 2rem;
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: repeat(2, 50%);
@@ -101,7 +104,7 @@ html {
 .share__links {
   // border: 2px solid skyblue;
   background-color: $color-very-dark-grayish-blue;
-  padding: auto 5rem;
+  // padding: auto 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -114,8 +117,8 @@ html {
   transition: all 0.2s;
 
   position: absolute;
-  top: 23rem;
-  right: -6.2rem;
+  top: 27.5rem;
+  right: -6.1rem;
 
   &::after {
     // border: 2px solid skyblue;
